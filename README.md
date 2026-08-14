@@ -62,20 +62,39 @@ The connection was configured using the **Manual** IPv4 method.
 ![Wired IPv4 Configuration](05_wired_ipv4_configuration.png)
 
 ---
-# Step 6 - Configure and Test the Network
+# Step 6 – Configure and Test the Network
 
-The following commands were executed in the Kali Linux terminal to configure and test the network connection:
+The following commands were executed in the Kali Linux terminal to configure and test the network connection.
 
-```bash
-ping -c 4 google.com
-sudo ifconfig eth0 10.0.0.2 netmask 255.255.255.0
-ifconfig eth0
-sudo ip route add default via 10.0.0.1
-# Step 7 - Verify the IP Routing Table
+The network connectivity and interface configuration were verified using the following commands:
+
+`ping -c 4 google.com`
+
+`sudo ifconfig eth0 10.0.0.2 netmask 255.255.255.0`
+
+`ifconfig eth0`
+
+`sudo ip route add default via 10.0.0.1`
+
+![Ping Google and Network Configuration](06_ping_google.png)
+
+---
+
+# Step 7 – Verify the IP Routing Table
 
 The final IP address and routing configuration were verified using the `ip route` command.
 
-The system was found to have the IP address `10.0.0.2` with the default gateway `10.0.0.1`.
+The system was found to have the IP address:
 
-```bash
-ip route
+`10.0.0.2`
+
+The default gateway was:
+
+`10.0.0.1`
+
+The following command was used to verify the final routing table:
+
+`ip route`
+
+![Final IP Route](07_final_ip_route.png)
+
