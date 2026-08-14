@@ -14,7 +14,7 @@ The network was configured with the IPv4 network:
 
 `10.0.0.0/24`
 
-DHCP was disabled so that the Kali Linux machine could be configured with a static IP address.
+DHCP was enabled so that the Kali Linux machine could be configured with a static IP address.
 
 ![CyberLab NAT Network](01_cyberlab_nat_network.png)
 
